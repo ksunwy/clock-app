@@ -12,17 +12,14 @@ const Clock = ({value}) => {
 
       const getTimeUntil = () => {
         const time = Date.parse(value) - Date.parse(new Date);
-
-        if (time < 0) {
-            setDays(0);
-            setHours(0);
-            setMinutes(0);
-            setSeconds(0);
-        } else {
+        if (time >= 0) {
             setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
             setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
             setMinutes(Math.floor((time / 1000 / 60) % 60));
             setSeconds(Math.floor((time / 1000) % 60));
+        }
+        else {
+            return null;
         }
       }
 

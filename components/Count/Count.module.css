@@ -1,0 +1,19 @@
+.input {
+    padding: 2px 8px;
+    margin: 70px 0;
+
+    font-size: 18px;
+    color: #000;
+
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .input {
+        margin: 40px 0;
+
+        font-size: 12px;
+    }
+}

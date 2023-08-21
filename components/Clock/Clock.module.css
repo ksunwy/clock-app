@@ -1,0 +1,38 @@
+.clock {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    font-weight: bold;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    padding-top: 35px;
+
+    align-self: center;
+
+    background-color: rgb(109, 74, 147);
+    border-radius: 100%;
+
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+    .clock {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 1, 1fr);
+        grid-row-gap: 17px;
+    }
+
+    .circle {
+        width: 70px;
+        height: 70px;
+        padding-top: 20px;
+
+        font-size: 14px;
+    }
+}
